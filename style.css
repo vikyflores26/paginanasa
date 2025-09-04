@@ -1,0 +1,19 @@
+img{
+    width: 200px;
+}
+
+.contenedor{
+    background-color: rgb(118, 131, 173);
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    width: 700px;
+    border-radius: 1.3rem;
+    flex-wrap: wrap;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+
+}
