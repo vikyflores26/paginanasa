@@ -2,7 +2,7 @@ img{
     width: 200px;
 }
 
-.contenedor{
+#contenedor{
     background-color: rgb(118, 131, 173);
     display: flex;
     justify-content: center;
@@ -15,5 +15,5 @@ img{
 body{
     display: flex;
     justify-content: center;
-
+    background-color: rgb(174, 185, 219);
 }
