@@ -3,9 +3,9 @@ img{
 }
 
 #contenedor{
-    background-color: rgb(118, 131, 173);
+    background-color: rgb(26, 61, 173);
     display: flex;
-    justify-content: center;
+    justify-content: column;
     padding: 2%;
     width: 700px;
     border-radius: 1.3rem;
@@ -14,107 +14,8 @@ img{
 
 body{
     display: flex;
-    justify-content: center;
+    align-items: center;
     background-color: rgb(174, 185, 219);
+    flex-direction: column;
 }
 
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Tipografía general */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #0b0c10;
-    color: #ffffff;
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-/* Encabezado */
-header {
-    background-color: #101820;
-    padding: 20px 40px;
-    border-bottom: 3px solid #ff4c00;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #ffffff;
-    letter-spacing: 2px;
-}
-
-header img.logo {
-    height: 60px;
-    vertical-align: middle;
-    margin-right: 15px;
-}
-
-/* Navegación */
-nav {
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ff4c00;
-}
-
-/* Contenido principal */
-main {
-    padding: 40px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    color: #ff4c00;
-    margin-bottom: 15px;
-    font-size: 2rem;
-}
-
-/* Botones */
-button, .btn {
-    background-color: #ff4c00;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    font-weight: bold;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover, .btn:hover {
-    background-color: #e64300;
-}
-
-
-
-/* Footer */
-footer {
-    background-color: #101820;
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 1px solid #333;
-    font-size: 14px;
-}
