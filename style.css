@@ -73,3 +73,20 @@ footer {
       font-size: 14px;
       color: #777;
     }
+
+    #contenedor{
+      background-color: #acaec9;
+      flex-direction: column;
+      padding: 10%;
+      margin: 20%;
+      box-shadow: #1e0496;
+      border-radius: 10%;
+    }
+
+    h3{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
