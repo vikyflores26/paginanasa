@@ -42,6 +42,45 @@ botonCantidad.onclick = function () {
         contenedorImagen.innerHTML += `<img src="${fotos[i].hdurl}" alt="Imagen aleatoria">`;
       }
     });
+
+fetch("https://api.nasa.gov/planetary/apod?api_key=4jmR71o3hrbJsbrjwZmqU2l3mUCEW98eglp9T1el&count=3")
+  .then(res => res.json())
+  .then(imagenes => {
+    // Guardamos el div contenedor
+    
+    contenedor.innerHTML = ""; // Limpiamos antes de ingresar
+    for (let i = 0; i < imagenes.length; i++) {
+      // En cada vuelta del bucle obtenemos un objeto (una "imagen" de la API)
+      let img = imagenes[i];
+
+      // Agregamos al contenedor un bloque de HTML dinámico
+      contenedor.innerHTML += `
+      <div class="tarjeta">
+        <!-- Mostramos el título -->
+        <h3>${img.title}</h3>
+  
+        <!-- Mostramos la fecha -->
+        <p><strong>Fecha:</strong> ${img.date}</p>
+  
+     
+          <img src="${img.url}" alt="${img.title}" width="400">
+  
+        <!-- Mostramos la explicación que viene en el objeto -->
+        <p>${img.explanation}</p>
+      </div>
+    `;
+    }
+
+  });
+
+
+
+let contenedor = document.querySelector("#contenedor");
+
+
+
+
+  
 };
 
 
