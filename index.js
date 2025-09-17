@@ -42,9 +42,6 @@ botonFecha.onclick = function () {
 }
 
 
-
-
-
 // Mostrar fotos aleatorias
 
 // Guardamos el contenedor de las imágenes a mostrar al azar
@@ -72,8 +69,9 @@ botonCantidad.onclick = function () {
      }
    })
 }
+let contenedor = document.querySelector("#contenedor");
 
-fetch("https://api.nasa.gov/planetary/apod?api_key=2gNsFcvytQtqMu02c4sQSQyNjMo6te4TviGimlGc=1")
+fetch("https://api.nasa.gov/planetary/apod?api_key=2gNsFcvytQtqMu02c4sQSQyNjMo6te4TviGimlGc&count=1")
   .then(res => res.json())
   .then(imagenes => {
     // Guardamos el div contenedor
@@ -104,8 +102,5 @@ fetch("https://api.nasa.gov/planetary/apod?api_key=2gNsFcvytQtqMu02c4sQSQyNjMo6t
 
   });
 
-
-
-let contenedor = document.querySelector("#contenedor");
 
 
